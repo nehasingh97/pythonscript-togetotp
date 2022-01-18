@@ -1,0 +1,76 @@
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
+import time
+
+driver = webdriver.Chrome(executable_path="./chromedriver")
+driver.get("https://rekyc.jmfonline.in/rekycadmin")
+# time.sleep(10)
+driver.implicitly_wait(5)
+print(driver.title)
+userElement = driver.find_element_by_name("username")
+print(userElement.is_displayed())
+print(userElement.is_enabled())
+userPwd = driver.find_element_by_name("password")
+print(userPwd.is_displayed())
+print(userPwd.is_enabled())
+
+userElement.send_keys("no-reply@jmfl.com")
+userPwd.send_keys("jmfl@1234")
+
+driver.find_element_by_xpath("/html/body/form/div/div[3]/button").click()
+driver.find_element_by_xpath("/html/body/div[1]/div[2]/div[1]/div/table/tbody/tr[3]/td[2]/button").click()
+driver.find_element_by_xpath("/html/body/div[2]/div/div[2]/div[5]/div[1]/a[1]").click()
+time.sleep(3)
+driver.find_element_by_xpath("/html/body/div[2]/div/div[2]/div[5]/div[1]/a[2]").click()
+time.sleep(3)
+driver.find_element_by_xpath("/html/body/div[2]/div/div[2]/div[5]/div[1]/a[3]").click()
+time.sleep(3)
+driver.find_element_by_xpath("/html/body/div[2]/div/div[2]/div[5]/div[1]/a[4]").click()
+time.sleep(3)
+driver.find_element_by_xpath("/html/body/div[2]/div/div[2]/div[5]/div[1]/a[5]").click()
+time.sleep(3)
+driver.find_element_by_xpath("/html/body/div[2]/div/div[2]/div[5]/div[1]/a[6]").click()
+time.sleep(3)
+driver.find_element_by_xpath("/html/body/div[2]/div/div[2]/div[5]/div[1]/a[7]").click()
+time.sleep(3)
+driver.find_element_by_xpath("/html/body/div[2]/div/div[2]/div[5]/div[1]/a[8]").click()
+time.sleep(3)
+driver.find_element_by_xpath("/html/body/div[2]/div/div[1]/a[1]").click()
+time.sleep(3)
+driver.find_element_by_xpath("/html/body/div[2]/div/div[1]/a[1]").click()
+time.sleep(3)
+driver.find_element_by_id("save_application").click()
+time.sleep(3)
+driver.find_element_by_xpath("/html/body/div[3]/div/div/span").click()
+time.sleep(3)
+driver.find_element_by_id("submit_application").click()
+time.sleep(3)
+driver.find_element_by_xpath("/html/body/div[3]/div/div/span").click()
+time.sleep(3)
+driver.find_element_by_xpath("/html/body/div[1]/ul/li[2]/a").click()
+time.sleep(3)
+driver.find_element_by_xpath("/html/body/div[1]/ul/li[2]/a")
+time.sleep(3)
+driver.find_element_by_xpath("/html/body/div[1]/ul/li[3]")
+time.sleep(3)
+driver.find_element_by_xpath("/html/body/div[1]/ul/li[4]/a")
+time.sleep(3)
+
+
+
+
+# driver.find_element_by_name("").click()
+# driver.find_element_by_xpath("").click()
+# driver.find_element_by_xpath("").click()
+
+
+
+# driver.get("https://www.makemytrip.com/hotels/")
+
+# print(driver.title)
+# driver.back()
+# time.sleep(10)
+# print(driver.title)
+# driver.forward()
+# time.sleep(10)
+# print(driver.title)
