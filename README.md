@@ -6,7 +6,7 @@ Selenium Script in python for automation testing
 **python3 -m venv env_name**
 
 # To activate env:
-**source env/bin/activate**
+**source env_name/bin/activate**
 
 # To run Python Projetc:
 
